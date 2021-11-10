@@ -1,13 +1,101 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	margin: 0 4em;
+	padding: 10px;
+	width: calc(100% - 8em);
+	color: #fff;
+	z-index: 2;
+}
+
+header nav {
+	display: flex;
+}
+
+.nav-item {
+	height: 1.5em;
+	margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+	font-size: 1.3em;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+}
+.nav-item a:hover {
+	color: #202b47;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: #d3d3d3;
+}
+
+#home {
+	height: 950px;
+	background-color: #414141;
+}
+#projects {
+	height: 950px;
+	background-color: #ff989c;
+}
+#aboutMe {
+	height: 950px;
+	background-color: #a6a69a;
+}
+#contact {
+	height: 950px;
+	/* background-color: #6f7c82; */
+	background-color: #825983;
+}
+#nav {
+	position: fixed;
+	margin: auto;
+	margin-left: 1200px;
+}
+.greeting {
+	padding-top: 375px;
+	/* padding-left: 200px; */
+	font-size: 45px;
+	font-family: "Tiempos Headline Bold", serif;
+	font-weight: 900;
+}
+
+@media (min-width: 600px) {
+	.greeting {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.contact1 {
+		margin-left: 100px;
+	}
+}
+
+@media (min-width: 960px) {
+	.greeting {
+		padding-left: 200px;
+	}
+	.contact1 {
+		margin-left: 200px;
+	}
+}
+
+.section {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 40px;
 }
