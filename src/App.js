@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import bulbasour from "./bulbasour.png";
 import woa from "./woa.png";
-import me from "./me.JPG";
+import me from "./ava.png";
 import resume from "./resume.pdf";
 import { Link } from "react-router-dom";
 import React, { useRef } from "react";
@@ -39,17 +39,28 @@ function App({ mailto, label }) {
 				</div>
 
 				<nav>
-					<div class="nav-item">
-						<a href="#projects">project</a>
+					<div className="nav-item">
+						<a href="#projects" style={{ color: "white" }}>
+							project
+						</a>
 					</div>
-					<div class="nav-item">
-						<a href="#aboutMe">about me</a>
+					<div className="nav-item">
+						<a href="#aboutMe" style={{ color: "white" }}>
+							about me
+						</a>
 					</div>
-					<div class="nav-item">
-						<a href="#contact">contact</a>
+					<div className="nav-item">
+						<a href="#contact" style={{ color: "white" }}>
+							contact
+						</a>
 					</div>
-					<div class="nav-item">
-						<a href={resume} target="_blank" rel="noreferrer">
+					<div className="nav-item">
+						<a
+							href={resume}
+							target="_blank"
+							rel="noreferrer"
+							style={{ color: "#ff989c" }}
+						>
 							resume
 						</a>
 					</div>
@@ -63,112 +74,212 @@ function App({ mailto, label }) {
 				</div>
 
 				<button className="contact1">
-					<a href="#contact">get in touch</a>
+					<a href="#contact" style={{ color: "#ff989c" }}>
+						get in touch
+					</a>
 				</button>
 			</div>
 
 			<div id="projects">
-				<div className="section">project</div>
-				<div>
-					<a
-						href="https://bulbasaur-bake-shop.herokuapp.com"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img src={bulbasour} width="400px" hight="200px" />
-					</a>
-
-					<div className="projectTitle">Bulbasour's Bakery</div>
-					<div className="projectDiscription">
-						A mock e-commerce site where users can browse a selection of
-						deserts, add to their cart, and checkout their selected items
-					</div>
-					<a
-						href="https://github.com/2108-bulbasaur-bunch/grace-shopper/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						github
-					</a>
+				<div className="sectionHead">
+					<hr
+						style={{
+							// color: "black",
+							backgroundColor: "#ff989c",
+							height: 1,
+							width: "100px",
+							margin: "10px",
+							borderColor: "#ff989c",
+							paddingLeft: "100px",
+						}}
+					/>
+					<div className="sectionName">project</div>
 				</div>
-				<div>
-					<a
-						href="https://world-of-arcana.herokuapp.com/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img src={woa} width="400px" hight="200px" />
-					</a>
 
-					<div className="projectTitle">World of Arcana</div>
-					<div className="projectDiscription">
-						World of Arcana is a web-based top-down fantasy-themed MMORPG. Join
-						your friends in an epic multiplayer quest to rid the land of the
-						invading horde of monsters
+				<div id="projectList">
+					<div className="singleProject">
+						<div>
+							<a
+								href="https://bulbasaur-bake-shop.herokuapp.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={bulbasour} width="400px" hight="200px" />
+							</a>
+
+							<div className="projectTitle">Bulbasour's Bakery</div>
+							<div className="projectDiscription">
+								A mock e-commerce site where users can browse a selection of
+								deserts, add to their cart, and checkout their selected items
+							</div>
+							<a
+								href="https://github.com/2108-bulbasaur-bunch/grace-shopper/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								github
+							</a>
+						</div>
 					</div>
-					<a
-						href="https://github.com/capstone-2108/world-of-arcana"
-						target="_blank"
-						rel="noreferrer"
-					>
-						github
-					</a>
+
+					<div className="singleProject">
+						<div>
+							<a
+								href="https://world-of-arcana.herokuapp.com/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={woa} width="400px" hight="200px" />
+							</a>
+
+							<div className="projectTitle">World of Arcana</div>
+							<div className="projectDiscription">
+								A Massively Multiplayer Online Role Playing Game written in
+								Javascript
+							</div>
+							<a
+								href="https://github.com/capstone-2108/world-of-arcana"
+								target="_blank"
+								rel="noreferrer"
+							>
+								github
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div id="aboutMe">
-				<div className="section">About me</div>
-				<img src={me} width="400px" hight="200px" />
-				<div className="description">
-					As a full stack software engineer, with an excitement for challenges
-					and thinking through how to anticipate the future, I continue to
-					strive to learn all things software and tech related to solve problems
-					with creative people and innovation. Here are a few technologies I’ve
-					been working with recently:
-					<ul>
-						<li>Javascript</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>React</li>
-						<li>Redux</li>
-						<li>Node.js</li>
-						<li>Express</li>
-						<li>PostgreSQL</li>
-						<li>Sequelize</li>
-					</ul>
+				<div className="sectionHead">
+					<hr
+						style={{
+							// color: "black",
+							backgroundColor: "#ff989c",
+							height: 1,
+							width: "100px",
+							margin: "10px",
+							borderColor: "#ff989c",
+							paddingLeft: "100px",
+						}}
+					/>
+					<div className="sectionName">about me</div>
 				</div>
-				<a
-					href="https://www.linkedin.com/in/ava-jeongyeonchoi/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					linkedin
-				</a>
-				<a href="https://github.com/avachoi" target="_blank" rel="noreferrer">
-					github
-				</a>
-				<a href={resume} target="_blank" rel="noreferrer">
-					resume
-				</a>
+				<div id="aboutMeContents">
+					<img src={me} id="me" width="400px" />
+					<div className="description">
+						As a full stack software engineer, with an excitement for challenges
+						and thinking through how to anticipate the future, I continue to
+						strive to learn all things software and tech related to solve
+						problems with creative people and innovation. Here are a few
+						technologies I’ve been working with recently:
+						<ul>
+							<li>Javascript</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>React</li>
+							<li>Redux</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>PostgreSQL</li>
+							<li>Sequelize</li>
+						</ul>
+						<a
+							href="https://www.linkedin.com/in/ava-jeongyeonchoi/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							linkedin
+						</a>
+						<a
+							href="https://github.com/avachoi"
+							target="_blank"
+							rel="noreferrer"
+						>
+							github
+						</a>
+						<a href={resume} target="_blank" rel="noreferrer">
+							resume
+						</a>
+					</div>
+				</div>
 			</div>
 
 			<div id="contact">
-				<div className="section">Contact</div>
-				<div>
+				<div className="sectionHead">
+					<hr
+						style={{
+							// color: "black",
+							backgroundColor: "#ff989c",
+							height: 1,
+							width: "100px",
+							margin: "10px",
+							borderColor: "#ff989c",
+							paddingLeft: "100px",
+						}}
+					/>
+					<div className="sectionName">contact</div>
+				</div>
+				<div className="contactText">
 					if you'd like to work with me or would like more information then
 					email me to get in touch.
 				</div>
-				<div>alexbchoi@gmail.com</div>
-				<button>Email me</button>
+				<div style={{ color: "#ff989c" }}>alexbchoi@gmail.com</div>
 
-				<form onSubmit={sendEmail}>
+				{/* <form onSubmit={sendEmail}>
 					<label>Name</label>
-					<input type="text" name="from_name" />
+					<input type="text" name="from_name"/>
 					<label>Email</label>
 					<input type="email" name="email" />
 					<label>Message</label>
 					<textarea name="message" />
 					<input type="submit" value="Send" />
+				</form> */}
+				<form onSubmit={sendEmail}>
+					<div className="row pt-5 mx-auto">
+						<div className="col-8 form-group mx-auto">
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Name"
+								name="from_name"
+								style={{ width: "253px" }}
+							/>
+						</div>
+						<div className="col-8 form-group pt-2 mx-auto">
+							<input
+								type="email"
+								className="form-control"
+								placeholder="Email Address"
+								name="email"
+								style={{ width: "253px", margin: "12px" }}
+							/>
+						</div>
+
+						<div className="col-8 form-group pt-2 mx-auto">
+							<textarea
+								className="form-control"
+								id=""
+								cols="30"
+								rows="8"
+								placeholder="Your message"
+								name="message"
+							></textarea>
+						</div>
+						<div className="col-8 pt-3 mx-auto">
+							<input
+								type="submit"
+								className="btn btn-info"
+								value="Send Message"
+								style={{
+									backgroundColor: "#414141",
+									border: "1px solid #ff989c",
+									color: "#ff989c",
+									borderRadius: "3px",
+									padding: "3px",
+								}}
+							></input>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
