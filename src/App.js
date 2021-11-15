@@ -1,15 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
-import bulbasour from "./bulbasour.png";
-import woa from "./woa.png";
+
 import me from "./ava.png";
 import resume from "./resume.pdf";
 import { Link } from "react-router-dom";
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
+import github from "./github.png";
+import linkedin from "./linkedin.png";
+import resumeIcon from "./resume.png";
+
+import Projects from "./Projects";
+
 function App({ mailto, label }) {
-	// const form = useRef();
+	const [sent, setSent] = useState("");
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -35,7 +40,7 @@ function App({ mailto, label }) {
 		<div>
 			<header>
 				<div className="logo">
-					<a href="#home">Ava</a>
+					<a href="#home"></a>
 				</div>
 
 				<nav>
@@ -70,7 +75,7 @@ function App({ mailto, label }) {
 			<div id="home">
 				<div className="greeting">
 					Hi, My name is Ava Choi. <br />I am a front end developer living in
-					NYC
+					NYC.
 				</div>
 
 				<button className="contact1">
@@ -80,74 +85,7 @@ function App({ mailto, label }) {
 				</button>
 			</div>
 
-			<div id="projects">
-				<div className="sectionHead">
-					<hr
-						style={{
-							// color: "black",
-							backgroundColor: "#ff989c",
-							height: 1,
-							width: "100px",
-							margin: "10px",
-							borderColor: "#ff989c",
-							paddingLeft: "100px",
-						}}
-					/>
-					<div className="sectionName">project</div>
-				</div>
-
-				<div id="projectList">
-					<div className="singleProject">
-						<div>
-							<a
-								href="https://bulbasaur-bake-shop.herokuapp.com"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={bulbasour} width="400px" hight="200px" />
-							</a>
-
-							<div className="projectTitle">Bulbasour's Bakery</div>
-							<div className="projectDiscription">
-								A mock e-commerce site where users can browse a selection of
-								deserts, add to their cart, and checkout their selected items
-							</div>
-							<a
-								href="https://github.com/2108-bulbasaur-bunch/grace-shopper/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								github
-							</a>
-						</div>
-					</div>
-
-					<div className="singleProject">
-						<div>
-							<a
-								href="https://world-of-arcana.herokuapp.com/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={woa} width="400px" hight="200px" />
-							</a>
-
-							<div className="projectTitle">World of Arcana</div>
-							<div className="projectDiscription">
-								A Massively Multiplayer Online Role Playing Game written in
-								Javascript
-							</div>
-							<a
-								href="https://github.com/capstone-2108/world-of-arcana"
-								target="_blank"
-								rel="noreferrer"
-							>
-								github
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			<Projects />
 
 			<div id="aboutMe">
 				<div className="sectionHead">
@@ -167,38 +105,53 @@ function App({ mailto, label }) {
 				<div id="aboutMeContents">
 					<img src={me} id="me" width="400px" />
 					<div className="description">
-						As a full stack software engineer, with an excitement for challenges
+						{/* As a full stack software engineer, with an excitement for challenges
 						and thinking through how to anticipate the future, I continue to
 						strive to learn all things software and tech related to solve
 						problems with creative people and innovation. Here are a few
-						technologies I’ve been working with recently:
-						<ul>
-							<li>Javascript</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>React</li>
-							<li>Redux</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>PostgreSQL</li>
-							<li>Sequelize</li>
-						</ul>
+						technologies I’ve been working with recently: */}
+						I am a software developer who loves to learn and has a strong
+						passion for coding, problem solving and helping create bigger and
+						better things. My decision to change careers has been the most
+						challenging, but also one of the most rewarding thus far. I take the
+						empathy, ability to listen to others and willingness to always learn
+						with me as I transition from the healthcare into the tech industry.
+						Coding gives me new languages and tools to positively impact those
+						around me and I am excited to continue building meaningful solutions
+						to complex problems. I believe in working hard at achieving your
+						goals and I aspire to never stop learning, growing and being better
+						tomorrow than I am today.
+						<div className="techList">
+							<ul>
+								<li>Javascript</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>React</li>
+								<li>Redux</li>
+							</ul>
+							<ul>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>PostgreSQL</li>
+								<li>Sequelize</li>
+							</ul>
+						</div>
 						<a
 							href="https://www.linkedin.com/in/ava-jeongyeonchoi/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							linkedin
+							<img src={linkedin} className="icon" />
 						</a>
 						<a
 							href="https://github.com/avachoi"
 							target="_blank"
 							rel="noreferrer"
 						>
-							github
+							<img src={github} className="icon" />
 						</a>
 						<a href={resume} target="_blank" rel="noreferrer">
-							resume
+							<img src={resumeIcon} className="icon" />
 						</a>
 					</div>
 				</div>
@@ -268,7 +221,7 @@ function App({ mailto, label }) {
 						<div className="col-8 pt-3 mx-auto">
 							<input
 								type="submit"
-								className="btn btn-info"
+								className="btn-info"
 								value="Send Message"
 								style={{
 									backgroundColor: "#414141",
@@ -277,11 +230,16 @@ function App({ mailto, label }) {
 									borderRadius: "3px",
 									padding: "3px",
 								}}
+								onClick={() => setSent("sent")}
 							></input>
 						</div>
 					</div>
 				</form>
+				<div className="sent">
+					{sent === "sent" ? <div>Message sent!</div> : <div></div>}
+				</div>
 			</div>
+			<footer>Designed &amp; coded by Ava Choi </footer>
 		</div>
 	);
 }
