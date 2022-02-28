@@ -74,8 +74,9 @@ function App({ mailto, label }) {
 
 			<div id="home">
 				<div className="greeting">
-					Hi, My name is Ava Choi. <br />I am a front end developer living in
-					NYC.
+					Hi, My name is{" "}
+					<span style={{ color: "#ff989c", fontSize: "60px" }}>Ava Choi</span>.{" "}
+					<br />I am a front end developer living in NYC.
 				</div>
 
 				<button className="contact1">

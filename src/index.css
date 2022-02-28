@@ -50,8 +50,6 @@ header nav {
 }
 #projects {
 	height: 950px;
-	/* border: 4px solid #414141;
-	margin: 10px; */
 	padding-top: 180px;
 }
 #aboutMe {
@@ -154,12 +152,12 @@ a:hover {
 }
 .singleProject {
 	width: 450px;
-	/* text-align: center; */
-	/* padding: 50px; */
+	margin: 50px 100px;
+}
+
+.singleProject:hover {
 	border: 2px solid #ff989c;
 	border-raidus: 3px;
-	margin: 50px 100px;
-	/* padding: 5px; */
 }
 #aboutMeContents {
 	display: flex;
@@ -220,6 +218,10 @@ form {
 	padding: 0px;
 	margin-top: 25px;
 	margin-left: 100px;
+}
+.projectImg:hover {
+	border: 2px solid #ff989c;
+	border-raidus: 3px;
 }
 ul {
 	list-style-type: none; /* Remove bullets */
