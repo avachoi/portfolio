@@ -1,7 +1,7 @@
-import woa from "./woa.png";
-import bakery from "./bakery.png";
+import woa from "../img/woa.png";
+import bakery from "../img/bakery.png";
 import React, { useState } from "react";
-import github from "./github.png";
+import github from "../img/github.png";
 
 const Project = () => {
 	const [project, setProject] = useState(0);

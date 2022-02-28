@@ -1,15 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "../App.css";
 
-import me from "./ava.png";
-import resume from "./resume.pdf";
+import me from "../img/ava.png";
+import resume from "../resume.pdf";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-import github from "./github.png";
-import linkedin from "./linkedin.png";
-import resumeIcon from "./resume.png";
+import github from "../img/github.png";
+import linkedin from "../img/linkedin.png";
+import resumeIcon from "../img/resume.png";
 
 import Projects from "./Projects";
 
@@ -112,15 +111,14 @@ function App({ mailto, label }) {
 						technologies I’ve been working with recently: */}
 						I am a software developer who loves to learn and has a strong
 						passion for coding, problem solving and helping create bigger and
-						better things. My decision to change careers has been the most
-						challenging, but also one of the most rewarding thus far. I take the
-						empathy, ability to listen to others and willingness to always learn
-						with me as I transition from the healthcare into the tech industry.
-						Coding gives me new languages and tools to positively impact those
-						around me and I am excited to continue building meaningful solutions
-						to complex problems. I believe in working hard at achieving your
-						goals and I aspire to never stop learning, growing and being better
-						tomorrow than I am today.
+						better things. I take the empathy, ability to listen to others and
+						willingness to always learn with me as I transition from the
+						healthcare into the tech industry. Coding gives me new languages and
+						tools to positively impact those around me and I am excited to
+						continue building meaningful solutions to complex problems. I
+						believe in working hard at achieving your goals and I aspire to
+						never stop learning, growing and being better tomorrow than I am
+						today.
 						<div className="techList">
 							<ul>
 								<li>Javascript</li>
