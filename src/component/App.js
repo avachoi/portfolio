@@ -1,4 +1,4 @@
-import "../App.css";
+// import "../App.css";
 
 import me from "../img/ava.png";
 import resume from "../resume.pdf";
@@ -33,6 +33,7 @@ function App({ mailto, label }) {
 					console.log(error.text);
 				}
 			);
+		setSent("sent");
 		e.target.reset();
 	};
 	return (
@@ -174,7 +175,7 @@ function App({ mailto, label }) {
 					if you'd like to work with me or would like more information then
 					email me to get in touch.
 				</div>
-				<div style={{ color: "#ff989c" }}>alexbchoi@gmail.com</div>
+				<div style={{ color: "#ff989c" }}>avachoi12@gmail.com</div>
 
 				{/* <form onSubmit={sendEmail}>
 					<label>Name</label>
@@ -228,7 +229,7 @@ function App({ mailto, label }) {
 									borderRadius: "3px",
 									padding: "3px",
 								}}
-								onClick={() => setSent("sent")}
+								// onClick={() => setSent("sent")}
 							></input>
 						</div>
 					</div>
