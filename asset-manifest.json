@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.864def12.chunk.css",
+    "main.js": "/static/js/main.eb904c23.chunk.js",
+    "main.js.map": "/static/js/main.eb904c23.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8656413f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8656413f.js.map",
+    "static/js/2.1de7451a.chunk.js": "/static/js/2.1de7451a.chunk.js",
+    "static/js/2.1de7451a.chunk.js.map": "/static/js/2.1de7451a.chunk.js.map",
+    "static/js/3.21058c5e.chunk.js": "/static/js/3.21058c5e.chunk.js",
+    "static/js/3.21058c5e.chunk.js.map": "/static/js/3.21058c5e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.864def12.chunk.css.map": "/static/css/main.864def12.chunk.css.map",
+    "static/js/2.1de7451a.chunk.js.LICENSE.txt": "/static/js/2.1de7451a.chunk.js.LICENSE.txt",
+    "static/media/ava.455c1963.png": "/static/media/ava.455c1963.png",
+    "static/media/bakery.8fff884f.png": "/static/media/bakery.8fff884f.png",
+    "static/media/github.44eee0c4.png": "/static/media/github.44eee0c4.png",
+    "static/media/resume.9e160830.pdf": "/static/media/resume.9e160830.pdf",
+    "static/media/woa.284b3f56.png": "/static/media/woa.284b3f56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8656413f.js",
+    "static/js/2.1de7451a.chunk.js",
+    "static/css/main.864def12.chunk.css",
+    "static/js/main.eb904c23.chunk.js"
+  ]
+}
