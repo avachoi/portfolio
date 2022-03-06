@@ -92,7 +92,6 @@ function App({ mailto, label }) {
 				<div className="sectionHead">
 					<hr
 						style={{
-							// color: "black",
 							backgroundColor: "#ff989c",
 							height: 1,
 							width: "100px",
@@ -106,11 +105,6 @@ function App({ mailto, label }) {
 				<div id="aboutMeContents">
 					<img src={me} id="me" width="400px" />
 					<div className="description">
-						{/* As a full stack software engineer, with an excitement for challenges
-						and thinking through how to anticipate the future, I continue to
-						strive to learn all things software and tech related to solve
-						problems with creative people and innovation. Here are a few
-						technologies I’ve been working with recently: */}
 						I am a software developer who loves to learn and has a strong
 						passion for coding, problem solving and helping create bigger and
 						better things. I take the empathy, ability to listen to others and
@@ -178,15 +172,6 @@ function App({ mailto, label }) {
 				</div>
 				<div style={{ color: "#ff989c" }}>avachoi12@gmail.com</div>
 
-				{/* <form onSubmit={sendEmail}>
-					<label>Name</label>
-					<input type="text" name="from_name"/>
-					<label>Email</label>
-					<input type="email" name="email" />
-					<label>Message</label>
-					<textarea name="message" />
-					<input type="submit" value="Send" />
-				</form> */}
 				<form onSubmit={sendEmail}>
 					<div className="row pt-5 mx-auto">
 						<div className="col-8 form-group mx-auto">
@@ -230,7 +215,6 @@ function App({ mailto, label }) {
 									borderRadius: "3px",
 									padding: "3px",
 								}}
-								// onClick={() => setSent("sent")}
 							></input>
 						</div>
 					</div>

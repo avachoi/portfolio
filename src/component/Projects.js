@@ -5,7 +5,6 @@ import github from "../img/github.png";
 
 const Project = () => {
 	const [project, setProject] = useState(0);
-	console.log("PROJECT", project);
 	return (
 		<div id="projects">
 			<div className="sectionHead">
