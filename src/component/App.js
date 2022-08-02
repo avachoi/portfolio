@@ -45,17 +45,17 @@ function App({ mailto, label }) {
 
 				<nav>
 					<div className="nav-item">
-						<a href="#projects" style={{ color: "white" }}>
+						<a href="#projects" style={{ color: "black" }}>
 							project
 						</a>
 					</div>
 					<div className="nav-item">
-						<a href="#aboutMe" style={{ color: "white" }}>
+						<a href="#aboutMe" style={{ color: "black" }}>
 							about me
 						</a>
 					</div>
 					<div className="nav-item">
-						<a href="#contact" style={{ color: "white" }}>
+						<a href="#contact" style={{ color: "black" }}>
 							contact
 						</a>
 					</div>
@@ -64,7 +64,7 @@ function App({ mailto, label }) {
 							href={resume}
 							target="_blank"
 							rel="noreferrer"
-							style={{ color: "#ff989c" }}
+							style={{ color: "#b5266e" }}
 						>
 							resume
 						</a>
@@ -75,12 +75,12 @@ function App({ mailto, label }) {
 			<div id="home">
 				<div className="greeting">
 					Hi, My name is{" "}
-					<span style={{ color: "#ff989c", fontSize: "60px" }}>Ava Choi</span>.{" "}
-					<br />I am a front end developer living in NYC.
+					<span style={{ color: "#b5256d", fontSize: "60px" }}>Ava Choi</span>.{" "}
+					<br />I am a software engineer living in NYC.
 				</div>
 
 				<button className="contact1">
-					<a href="#contact" style={{ color: "#ff989c" }}>
+					<a href="#contact" style={{ color: "#b5266e" }}>
 						get in touch
 					</a>
 				</button>
@@ -92,11 +92,11 @@ function App({ mailto, label }) {
 				<div className="sectionHead">
 					<hr
 						style={{
-							backgroundColor: "#ff989c",
+							backgroundColor: "#b5266e",
 							height: 1,
 							width: "100px",
 							margin: "10px",
-							borderColor: "#ff989c",
+							borderColor: "#b5266e",
 							paddingLeft: "100px",
 						}}
 					/>
@@ -156,11 +156,11 @@ function App({ mailto, label }) {
 					<hr
 						style={{
 							// color: "black",
-							backgroundColor: "#ff989c",
+							backgroundColor: "#b5266e",
 							height: 1,
 							width: "100px",
 							margin: "10px",
-							borderColor: "#ff989c",
+							borderColor: "#b5266e",
 							paddingLeft: "100px",
 						}}
 					/>
@@ -170,7 +170,7 @@ function App({ mailto, label }) {
 					if you'd like to work with me or would like more information then
 					email me to get in touch.
 				</div>
-				<div style={{ color: "#ff989c" }}>avachoi12@gmail.com</div>
+				<div style={{ color: "#b5266e" }}>avachoi12@gmail.com</div>
 
 				<form onSubmit={sendEmail}>
 					<div className="row pt-5 mx-auto">
@@ -210,8 +210,8 @@ function App({ mailto, label }) {
 								value="Send Message"
 								style={{
 									backgroundColor: "#414141",
-									border: "1px solid #ff989c",
-									color: "#ff989c",
+									border: "1px solid #b5266e",
+									color: "#b5266e",
 									borderRadius: "3px",
 									padding: "3px",
 								}}

@@ -4,8 +4,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: white;
-	background-color: #414141;
+	color: black;
 	font-size: 18px;
 }
 
@@ -22,7 +21,7 @@ header {
 	width: calc(100% - 8em);
 	color: #fff;
 	z-index: 2;
-	background-color: #414141;
+	/* background-color: #414141; */
 }
 
 header nav {
@@ -33,6 +32,7 @@ header nav {
 .nav-item {
 	height: 1.5em;
 	margin: 0px;
+	color: black;
 }
 
 .nav-item a {
@@ -41,12 +41,14 @@ header nav {
 	text-decoration: none;
 }
 .nav-item a:hover {
-	border-bottom: #ff989c solid 2px;
+	border-bottom: #b5266e solid 2px;
 }
 
 #home {
 	height: 950px;
-	background-color: #414141;
+	background-color: #fcf4f4;
+	background-image: url(/src/img/pink_sky.jpg);
+	background-size: 1900px;
 }
 #projects {
 	height: 950px;
@@ -54,8 +56,7 @@ header nav {
 }
 #aboutMe {
 	height: 950px;
-	/* background-color: #a6a69a; */
-	background-color: #414141;
+	background-color: #fcf4f4;
 	padding-top: 180px;
 }
 #contact {
@@ -75,18 +76,17 @@ header nav {
 	padding-top: 375px;
 	/* padding-left: 200px; */
 	font-size: 45px;
-	font-family: "Tiempos Headline Bold", bold, serif;
-	font-weight: 900;
+	/* font-family: "Tiempos Headline Bold", bold, serif; */
+	font-weight: 700;
 }
 .contact1 {
 	margin-top: 10px;
-	background-color: #414141;
-	border: 1px solid #ff989c;
+	background-color: none;
+	border: 1px solid #b5266e;
 	border-radius: 3px;
 	font-size: 18px;
 	padding: 3px 0px;
 	text-decoration: none;
-	color: "#ff989c";
 }
 a:link {
 	text-decoration: none;
@@ -156,7 +156,7 @@ a:hover {
 }
 
 .singleProject:hover {
-	border: 2px solid #ff989c;
+	border: 2px solid #b5266e;
 	border-raidus: 3px;
 }
 #aboutMeContents {
@@ -206,7 +206,7 @@ form {
 .viewAllProjects {
 	background-color: #414141;
 	color: black;
-	border: #ff989c;
+	border: #b5266e;
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -220,7 +220,7 @@ form {
 	margin-left: 100px;
 }
 .projectImg:hover {
-	border: 2px solid #ff989c;
+	border: 2px solid #b5266e;
 	border-raidus: 3px;
 }
 ul {

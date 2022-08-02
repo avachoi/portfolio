@@ -10,12 +10,11 @@ const Project = () => {
 			<div className="sectionHead">
 				<hr
 					style={{
-						// color: "black",
-						backgroundColor: "#ff989c",
+						backgroundColor: "#b5266e",
 						height: 1,
 						width: "100px",
 						margin: "10px",
-						borderColor: "#ff989c",
+						borderColor: "#b5266e",
 						paddingLeft: "100px",
 					}}
 				/>
