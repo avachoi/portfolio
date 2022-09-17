@@ -47,11 +47,10 @@ header nav {
 #home {
 	height: 950px;
 	background-color: #fcf4f4;
-	background-image: url(/src/img/pink_sky.jpg);
 	background-size: 1900px;
 }
 #projects {
-	height: 950px;
+	height: 1300px;
 	padding-top: 180px;
 }
 #aboutMe {
@@ -204,7 +203,6 @@ form {
 	align-items: center;
 }
 .viewAllProjects {
-	background-color: #414141;
 	color: black;
 	border: #b5266e;
 	font-weight: bold;

@@ -209,7 +209,6 @@ function App({ mailto, label }) {
 								className="btn-info"
 								value="Send Message"
 								style={{
-									backgroundColor: "#414141",
 									border: "1px solid #b5266e",
 									color: "#b5266e",
 									borderRadius: "3px",
