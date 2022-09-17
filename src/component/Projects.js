@@ -1,5 +1,6 @@
 import woa from "../img/woa.png";
 import bakery from "../img/bakery.png";
+import cov19nyc from "../img/cov19NYC.png";
 import React, { useState } from "react";
 import github from "../img/github.png";
 
@@ -26,22 +27,35 @@ const Project = () => {
 				<div id="projectList">
 					<div className="singleProject">
 						<div onClick={() => setProject(project + 1)}>
-							<img src={bakery} width="100%" padding="0px" />
-							<div className="projectTitle">Bulbasour's Bakery</div>
+							<img src={cov19nyc} width="100%" padding="0px" alt="nyc map" />
+							<div className="projectTitle">Cov19NYC</div>
 							<div className="projectDescription">
-								A mock e-commerce site where users can browse a selection of
-								deserts, add to their cart, and checkout their selected items
+								A full stack web app to keep track of Covid-19 cases in NYC
 							</div>
 						</div>
 					</div>
-
 					<div className="singleProject">
 						<div onClick={() => setProject(project + 2)}>
-							<img src={woa} width="100%" padding="0px" />
+							<img src={woa} width="100%" padding="0px" alt="game sene" />
 							<div className="projectTitle">World of Arcana</div>
 							<div className="projectDescription">
 								A Massively Multiplayer Online Role Playing Game written in
 								Javascript
+							</div>
+						</div>
+					</div>
+					<div className="singleProject">
+						<div onClick={() => setProject(project + 1)}>
+							<img
+								src={bakery}
+								width="100%"
+								padding="0px"
+								alt="bakery mainpage"
+							/>
+							<div className="projectTitle">Bulbasour's Bakery</div>
+							<div className="projectDescription">
+								A mock e-commerce site where users can browse a selection of
+								deserts, add to their cart, and checkout their selected items
 							</div>
 						</div>
 					</div>
